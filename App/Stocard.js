@@ -1,32 +1,13 @@
 import React, { useState } from "react";
 import { Text, StyleSheet } from "react-native";
-import { Colors } from "./Assets/Colors";
+import { colors } from "./Assets/index";
+import {SplashScreen} from './Screen/Splash/index'
 
 const StoCard = () => {
-const [title,setTitle]=useState("Hello Riddhi")
-const finalText="this is body text"
 
-const onpressText=()=>
-{
-    setTitle("bye")
-}
 return(
-    <>
-    <Text style={styles.baseTitle}>
-    <Text style={styles.otherText} onPress={onpressText}>{title}</Text>
-    </Text>
-    </>
+   <SplashScreen/>
 )
-};
-
-const styles=StyleSheet.create({
-    baseTitle:{
-        color:Colors.white
-    },
-    otherText:
-    {
-        fontSize:20
-    }
-});
+}
 
 export default StoCard;
