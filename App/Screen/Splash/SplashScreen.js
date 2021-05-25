@@ -1,9 +1,10 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect } from 'react';
 import {styles} from './style';
 import {images} from '../../Assets/index'
+import Toast from 'react-native-toast-message';
 //import createSagaMiddleware from 'redux-saga';
 
-import { View, Text, StyleSheet, Image, TextInput, FlatList } from 'react-native';
+import { View, Text, ToastAndroid, FlatList ,TouchableOpacity} from 'react-native';
 
 export const SplashScreen = () =>
 {
@@ -15,11 +16,9 @@ export const SplashScreen = () =>
         {name:'anjali',key:'4'}
     ]
     )
+    
 
-//  const clickText = () =>
-//  {
-//     setTitle("Riddhi")
-//  };
+   
     return(
         <View style={styles.container}>
             <FlatList
@@ -28,7 +27,11 @@ export const SplashScreen = () =>
             keyExtractor={(item)=>item.key}
             data={title}
             renderItem={({item})=>
-            <Text>{item.name}</Text>}/>
+
+            <TouchableOpacity onPress={() => ToastAndroid.show(item.key,ToastAndroid.SHORT)}>
+            <Text style={styles.textlist} >{item.name}</Text>
+            </TouchableOpacity>
+        } />
         {/* {
             title.map(item=>{
                 
@@ -36,7 +39,7 @@ export const SplashScreen = () =>
                         <Text >
                             {item.name}
                         </Text>
-                    </View>
+                    </View
                 
             })
         } */}
