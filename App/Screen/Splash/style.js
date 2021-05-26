@@ -27,5 +27,9 @@ export const styles=StyleSheet.create({
            fontSize:15,
            marginTop:5,
            color:colors.gray
+       },
+       textlist:
+       {
+        margin:20
        }
 })
