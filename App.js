@@ -1,11 +1,11 @@
-import React from 'react';
-import StoCard from './App/Stocard';
+import React,{useState} from 'react';
+import { HomeStack } from './App/Routes/HomeStack';
+
+
 
 const App = () =>{
-  return(
-    
-    <StoCard/>
-    
-  );
+   
+     return( <HomeStack/>)
+  
   };
   export default App;
