@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import { Colors } from '../Assets/Colors';
+import { Colors } from '../Assets/Colors/Colors';
 export const styles=StyleSheet.create({
 
     Container:

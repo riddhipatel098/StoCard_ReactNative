@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View,Text, TouchableOpacity,FlatList } from 'react-native';
-import { styles } from './styles';
+import { styles } from '../styles';
+
 
 export const Home = ({navigation}) => {
 

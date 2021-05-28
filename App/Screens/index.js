@@ -1,6 +1,6 @@
-import {Home} from './Home'
-import {About} from './About'
-import {ReviewDetail} from './ReviewDetail'
+import {Home} from './Home/Home'
+import {About} from './About/About'
+import {ReviewDetail} from './Home/ReviewDetail'
 
 export const MainScreen =
 {
